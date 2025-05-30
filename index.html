@@ -1,15 +1,21 @@
 <html>
- <head>
+  <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-</head>
-<body> 
-     <a-box position="-1 0.5 -3" rotation="0 45 0" color="#b833ff"></a-box>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#b833ff"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#33ff99"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#4f33ff"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#ff33ec"></a-plane>
       <a-sky color="#339cff"></a-sky>
-      <a-torus position="0 0 2.5" color="ff33bb" rotation="80 0 0" width="4" height="4"></a-torus>
-      <a-icosahedron position="0 0 2.5" color="ff33bb" rotation="80 0 0" width="4" height="4"></a-icosahedron>
-</body>
 
+      <!-- Torus con atributos válidos -->
+      <a-torus position="0 1 2.5" color="#ff33bb" rotation="80 0 0" radius="1" radius-tubular="0.2"></a-torus>
+
+      <!-- Icosahedron -->
+      <a-icosahedron position="2 1 2.5" color="#ff33bb" radius="1"></a-icosahedron>
+    </a-scene>
+  </body>
 </html>
+
